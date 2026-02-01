@@ -18,5 +18,6 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-Source transcript we are building from:
-- `transcript_PctlBxRh0p4.md`
+Source context:
+- Video: https://www.youtube.com/watch?v=PctlBxRh0p4
+- Note: the full transcript is intentionally not stored in this public repo.

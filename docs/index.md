@@ -4,6 +4,24 @@ This guide is for scientists who are *not* professional software developers, but
 
 The core idea: instead of using an AI model like a chat box, you use an *agent* that can take actions (read/write files, run commands, iterate) with you supervising.
 
+## Recommended reading path
+
+If you are new:
+
+1. `docs/overview.md`
+2. `docs/why-agentic.md`
+3. `docs/tooling.md`
+4. `docs/first-hour.md`
+5. `docs/workflows.md`
+6. `docs/verification.md`
+
+If you are leading a lab:
+
+1. `docs/lab-rollout.md`
+2. `docs/lab-policy-template.md`
+3. `docs/reproducibility.md`
+4. `docs/safety-privacy.md`
+
 ## Where to start
 
 1. Install and try Claude Code on a small, non-sensitive project: `docs/claude-code.md`

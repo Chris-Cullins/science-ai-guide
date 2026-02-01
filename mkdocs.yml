@@ -23,17 +23,43 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started:
+  - Start Here:
+      - What This Is: overview.md
+      - Why Agentic AI: why-agentic.md
+      - Pick Your Tools: tooling.md
+      - Quick Win (First Hour): first-hour.md
+  - Getting Set Up:
       - Claude Code: claude-code.md
-      - First Hour: first-hour.md
-      - Workflows: workflows.md
-  - Lab Ops:
-      - Lab Rollout: lab-rollout.md
-      - Reproducibility: reproducibility.md
+      - Setup Checklist: setup.md
+      - Terminal Basics: cli-basics.md
+      - Git Basics: git-basics.md
+      - Project Structure: project-structure.md
+  - Core Skills:
+      - Workflows (Plan-Do-Verify): workflows.md
+      - How Agentic AI Works: how-it-works.md
+      - Prompting Patterns: prompting.md
+      - Verification & Rigor: verification.md
+      - Checklists: checklists.md
+      - AI Fluency: ai-fluency.md
+      - Cost Control: cost-control.md
       - Safety & Privacy: safety-privacy.md
       - Disclosure: disclosure.md
+  - Scientist Workflows:
+      - Literature & Notes: literature.md
+      - Data Analysis: data-analysis.md
+      - Figures & Tables: figures.md
+      - Coding & Refactors: coding.md
+      - Writing & Grants: writing.md
+  - Lab Ops:
+      - Lab Rollout: lab-rollout.md
+      - Lab Policy Template: lab-policy-template.md
+      - Reproducibility: reproducibility.md
+  - Advanced:
+      - MCP & Connectors: mcp.md
+      - Troubleshooting: troubleshooting.md
   - Reference:
-      - Prompt Templates: prompts.md
-      - Pricing: pricing.md
+      - Prompt Templates (Copy/Paste): prompts.md
+      - Pricing (Snapshot): pricing.md
       - Why This Guide Exists: context.md
       - Publishing: publishing.md
+      - FAQ: faq.md

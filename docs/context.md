@@ -1,6 +1,8 @@
 # Why This Guide Exists
 
-This guide started from a YouTube video transcript: `transcript_PctlBxRh0p4.md` (https://www.youtube.com/watch?v=PctlBxRh0p4).
+This guide started from a YouTube video (https://www.youtube.com/watch?v=PctlBxRh0p4).
+
+We intentionally do not store the full transcript in this public repo.
 
 In that transcript, a scientist describes attending an internal meeting at the Institute for Advanced Study focused on how "agentic AI" tools (named examples: Claude and Cursor) are changing research work. Several themes show up repeatedly:
 
