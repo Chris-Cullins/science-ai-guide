@@ -8,34 +8,35 @@ The core idea: instead of using an AI model like a chat box, you use an *agent* 
 
 If you are new:
 
-1. `docs/overview.md`
-2. `docs/why-agentic.md`
-3. `docs/tooling.md`
-4. `docs/first-hour.md`
-5. `docs/workflows.md`
-6. `docs/verification.md`
+1. [What This Is](overview.md)
+2. [Why Agentic AI](why-agentic.md)
+3. [Pick Your Tools](tooling.md)
+4. [Bootcamp (2 Days)](bootcamp.md)
+5. [Quick Win (First Hour)](first-hour.md)
+6. [Workflows (Plan-Do-Verify)](workflows.md)
+7. [Verification and Rigor](verification.md)
 
 If you are leading a lab:
 
-1. `docs/lab-rollout.md`
-2. `docs/lab-policy-template.md`
-3. `docs/reproducibility.md`
-4. `docs/safety-privacy.md`
+1. [Lab Rollout](lab-rollout.md)
+2. [Lab Policy Template](lab-policy-template.md)
+3. [Reproducibility](reproducibility.md)
+4. [Safety, Privacy, and Policy](safety-privacy.md)
 
 ## Where to start
 
-1. Install and try Claude Code on a small, non-sensitive project: `docs/claude-code.md`
-2. Learn the core workflow loop (plan -> do -> verify): `docs/workflows.md`
-3. Set guardrails for privacy, safety, and reproducibility: `docs/safety-privacy.md`
-4. Copy/paste prompt templates you can actually use: `docs/prompts.md`
-5. Understand costs and avoid surprises: `docs/pricing.md`
+1. Install and try Claude Code on a small, non-sensitive project: [Claude Code](claude-code.md)
+2. Learn the core workflow loop (plan -> do -> verify): [Workflows](workflows.md)
+3. Set guardrails for privacy, safety, and reproducibility: [Safety & Privacy](safety-privacy.md)
+4. Copy/paste prompt templates you can actually use: [Prompt Templates](prompts.md)
+5. Understand costs and avoid surprises: [Pricing](pricing.md)
 
 If you are onboarding a lab:
 
-- First hour checklist: `docs/first-hour.md`
-- Lab rollout: `docs/lab-rollout.md`
-- Disclosure/attribution: `docs/disclosure.md`
-- Reproducibility habits: `docs/reproducibility.md`
+- First hour checklist: [First Hour](first-hour.md)
+- Lab rollout: [Lab Rollout](lab-rollout.md)
+- Disclosure/attribution: [Disclosure](disclosure.md)
+- Reproducibility habits: [Reproducibility](reproducibility.md)
 
 ## A quick mental model
 

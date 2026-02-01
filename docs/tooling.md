@@ -10,7 +10,7 @@ Why:
 - edits files and runs commands
 - good at larger refactors and multi-step tasks
 
-Start here: `docs/claude-code.md`
+Start here: [Claude Code](claude-code.md)
 
 ## Alternatives (common)
 

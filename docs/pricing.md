@@ -37,6 +37,25 @@ Source: https://www.anthropic.com/pricing
 
 - ChatGPT plans are listed at: https://openai.com/pricing
 
+## What people actually end up paying (examples)
+
+These are example monthly totals based on the subscription prices listed above. Pricing changes often; verify before publishing.
+
+Starter (single tool)
+
+- Claude Pro ($20/month billed monthly)
+
+Common "two-tool" stacks
+
+- Claude Pro ($20) + GitHub Copilot Pro ($10) = $30/month
+- Claude Pro ($20) + Cursor Pro ($20) = $40/month
+
+Heavy use
+
+- Claude Pro ($20) + Cursor Pro+ ($60) = $80/month
+
+If you also add a ChatGPT plan, include that amount in your budget.
+
 ## Cost control tips
 
 - Prefer smaller tasks and incremental diffs (reduces rework).

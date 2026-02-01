@@ -19,7 +19,7 @@ Write the decision down (one page) and make it easy to follow.
 ## 3) Standardize prompts (seriously)
 
 Put a few prompt templates in a shared doc and encourage people to reuse them.
-See: `docs/prompts.md`.
+See: [Prompt Templates](prompts.md).
 
 ## 4) Track what the tool did
 

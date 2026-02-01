@@ -4,7 +4,7 @@ The biggest gains come after you build a few habits.
 
 ## Day 1: Quick win
 
-- Do the "First Hour" task: `docs/first-hour.md`
+- Do the "First Hour" task: [First Hour](first-hour.md)
 
 ## Day 2: Make verification cheap
 
@@ -34,6 +34,6 @@ The biggest gains come after you build a few habits.
 
 ## Day 7: Make a lab policy
 
-- Fill in: `docs/lab-policy-template.md`
+- Fill in: [Lab Policy Template](lab-policy-template.md)
 
 If you do just this week, you will be far ahead of most people.

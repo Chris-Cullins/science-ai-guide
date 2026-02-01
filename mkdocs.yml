@@ -27,10 +27,12 @@ nav:
       - What This Is: overview.md
       - Why Agentic AI: why-agentic.md
       - Pick Your Tools: tooling.md
+      - Bootcamp (2 Days): bootcamp.md
       - Quick Win (First Hour): first-hour.md
   - Getting Set Up:
       - Claude Code: claude-code.md
       - Setup Checklist: setup.md
+      - Installation Order: install-order.md
       - Terminal Basics: cli-basics.md
       - Git Basics: git-basics.md
       - Project Structure: project-structure.md
@@ -42,6 +44,8 @@ nav:
       - Checklists: checklists.md
       - AI Fluency: ai-fluency.md
       - Cost Control: cost-control.md
+      - Multi-Model Strategy: multi-model.md
+      - Burner Machine and Sandboxes: burner-machine.md
       - Safety & Privacy: safety-privacy.md
       - Disclosure: disclosure.md
   - Scientist Workflows:

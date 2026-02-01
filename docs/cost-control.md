@@ -27,4 +27,4 @@ If your lab is paying:
 - track usage monthly
 - decide in advance when to approve upgrades
 
-See also: `docs/pricing.md`
+See also: [Pricing](pricing.md)
