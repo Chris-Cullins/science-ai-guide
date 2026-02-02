@@ -388,10 +388,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-install-claude-code" class="md-nav__link">
+  <a href="#step-1-install-an-agent-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Install Claude Code
+        Step 1: Install an agent tool
       
     </span>
   </a>
@@ -399,10 +399,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-start-claude-code" class="md-nav__link">
+  <a href="#step-2-start-your-agent-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Start Claude Code
+        Step 2: Start your agent tool
       
     </span>
   </a>
@@ -410,10 +410,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-paste-this-prompt-into-claude-code" class="md-nav__link">
+  <a href="#step-3-paste-this-prompt-into-your-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Paste this prompt into Claude Code
+        Step 3: Paste this prompt into your tool
       
     </span>
   </a>
@@ -1993,10 +1993,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-1-install-claude-code" class="md-nav__link">
+  <a href="#step-1-install-an-agent-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Install Claude Code
+        Step 1: Install an agent tool
       
     </span>
   </a>
@@ -2004,10 +2004,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-start-claude-code" class="md-nav__link">
+  <a href="#step-2-start-your-agent-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: Start Claude Code
+        Step 2: Start your agent tool
       
     </span>
   </a>
@@ -2015,10 +2015,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-paste-this-prompt-into-claude-code" class="md-nav__link">
+  <a href="#step-3-paste-this-prompt-into-your-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3: Paste this prompt into Claude Code
+        Step 3: Paste this prompt into your tool
       
     </span>
   </a>
@@ -2066,12 +2066,14 @@
 
 <h1 id="oh-i-get-it-guided-tour">Oh I Get It (Guided Tour)<a class="headerlink" href="#oh-i-get-it-guided-tour" title="Permanent link">&para;</a></h1>
 <p>This is a deliberately "aha"-style experience.</p>
-<p>You will use an agentic tool (Claude Code) to download this guide onto your computer, then have the agent walk you through it interactively.</p>
+<p>You will use an agentic tool to download this guide onto your computer, then have the agent walk you through it interactively.</p>
+<p>This guide uses Claude Code as the default tool, but you do not have to use Claude Code. Use whatever tool you already have and like.</p>
+<p>See: <a href="../tooling/">Pick Your Tools</a></p>
 <p>Note: if there is something in this guide you do not understand, ask your tool of choice to explain it. That is one of the best ways to learn fast.</p>
 <h2 id="what-you-will-do">What you will do<a class="headerlink" href="#what-you-will-do" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Install Claude Code</li>
-<li>Start Claude Code in a fresh folder</li>
+<li>Install your agent tool</li>
+<li>Start it in a fresh folder</li>
 <li>Paste a single prompt</li>
 <li>Let the agent:</li>
 <li>download the guide (from GitHub)</li>
@@ -2082,17 +2084,25 @@
 <h2 id="safety-note">Safety note<a class="headerlink" href="#safety-note" title="Permanent link">&para;</a></h2>
 <p>The prompt below asks the agent to run shell commands (<code>curl</code>, <code>tar</code>, etc.).</p>
 <p>If you do not recognize a command, ask it to explain before you approve it.</p>
-<h2 id="step-1-install-claude-code">Step 1: Install Claude Code<a class="headerlink" href="#step-1-install-claude-code" title="Permanent link">&para;</a></h2>
-<p>See: <a href="../claude-code/">Claude Code</a></p>
-<p>If you already pay for ChatGPT, you can do a very similar experience with <a href="https://github.com/openai/codex">OpenAI Codex CLI</a>. This page uses Claude Code as the default path.</p>
-<h2 id="step-2-start-claude-code">Step 2: Start Claude Code<a class="headerlink" href="#step-2-start-claude-code" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-install-an-agent-tool">Step 1: Install an agent tool<a class="headerlink" href="#step-1-install-an-agent-tool" title="Permanent link">&para;</a></h2>
+<p>Default path in this guide:</p>
+<ul>
+<li><a href="../claude-code/">Claude Code</a></li>
+</ul>
+<p>If you already pay for ChatGPT, you can do a very similar experience with <a href="https://github.com/openai/codex">OpenAI Codex CLI</a> (a terminal-based coding agent).</p>
+<h2 id="step-2-start-your-agent-tool">Step 2: Start your agent tool<a class="headerlink" href="#step-2-start-your-agent-tool" title="Permanent link">&para;</a></h2>
 <p>Open a terminal: <a href="../open-terminal/">Open a Terminal</a></p>
 <p>Then run:</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/agentic-ai-guide-tour
 <span class="nb">cd</span><span class="w"> </span>~/agentic-ai-guide-tour
 claude
 </code></pre></div>
-<h2 id="step-3-paste-this-prompt-into-claude-code">Step 3: Paste this prompt into Claude Code<a class="headerlink" href="#step-3-paste-this-prompt-into-claude-code" title="Permanent link">&para;</a></h2>
+<p>If you are using Codex CLI instead:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/agentic-ai-guide-tour
+<span class="nb">cd</span><span class="w"> </span>~/agentic-ai-guide-tour
+codex
+</code></pre></div>
+<h2 id="step-3-paste-this-prompt-into-your-tool">Step 3: Paste this prompt into your tool<a class="headerlink" href="#step-3-paste-this-prompt-into-your-tool" title="Permanent link">&para;</a></h2>
 <p>Replace nothing; just paste.</p>
 <div class="highlight"><pre><span></span><code>I want an interactive walkthrough of the &quot;Science + Agentic AI Guide&quot;.
 
@@ -2117,7 +2127,7 @@ Rules:
 - When you recommend running a command, explain what it does in one sentence.
 </code></pre></div>
 <h2 id="if-you-are-on-windows">If you are on Windows<a class="headerlink" href="#if-you-are-on-windows" title="Permanent link">&para;</a></h2>
-<p>Claude Code can run in Windows shells. If the <code>tar</code> command is not available, ask the agent to use a zip download + PowerShell <code>Expand-Archive</code> instead.</p>
+<p>If the <code>tar</code> command is not available, ask the agent to use a zip download + PowerShell <code>Expand-Archive</code> instead.</p>
 <h2 id="what-success-looks-like">What success looks like<a class="headerlink" href="#what-success-looks-like" title="Permanent link">&para;</a></h2>
 <ul>
 <li>You have a local copy of the guide in <code>~/agentic-ai-guide-tour/science-ai-guide/</code></li>
