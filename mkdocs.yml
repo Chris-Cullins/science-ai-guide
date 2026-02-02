@@ -22,6 +22,7 @@ markdown_extensions:
       permalink: true
 
 nav:
+  - Notes from the Human: notes-from-the-human.md
   - Home: index.md
   - Start Here:
       - What This Is: overview.md
@@ -33,6 +34,7 @@ nav:
       - Claude Code: claude-code.md
       - Setup Checklist: setup.md
       - Installation Order: install-order.md
+      - Open a Terminal: open-terminal.md
       - Terminal Basics: cli-basics.md
       - Git Basics: git-basics.md
       - Project Structure: project-structure.md

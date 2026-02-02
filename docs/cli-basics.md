@@ -2,6 +2,8 @@
 
 You do not need to become a software engineer. But agentic tools often live in the terminal.
 
+If you do not know how to open a terminal, start here: [Open a Terminal](open-terminal.md)
+
 ## Three commands you should know
 
 ```bash
