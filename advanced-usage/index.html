@@ -1606,10 +1606,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reusable-prompts-stop-retyping-yourself" class="md-nav__link">
+  <a href="#persistent-instructions-tell-it-once" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reusable prompts: stop retyping yourself
+        Persistent instructions: tell it once
       
     </span>
   </a>
@@ -1617,10 +1617,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hooks-make-correctness-automatic" class="md-nav__link">
+  <a href="#reusable-prompts-stop-retyping-yourself" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hooks: make correctness automatic
+        Reusable prompts: stop retyping yourself
       
     </span>
   </a>
@@ -1704,6 +1704,17 @@
     <span class="md-ellipsis">
       
         A scientist-friendly way to use advanced features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-developers-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For developers: hooks
       
     </span>
   </a>
@@ -2060,10 +2071,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reusable-prompts-stop-retyping-yourself" class="md-nav__link">
+  <a href="#persistent-instructions-tell-it-once" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reusable prompts: stop retyping yourself
+        Persistent instructions: tell it once
       
     </span>
   </a>
@@ -2071,10 +2082,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hooks-make-correctness-automatic" class="md-nav__link">
+  <a href="#reusable-prompts-stop-retyping-yourself" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hooks: make correctness automatic
+        Reusable prompts: stop retyping yourself
       
     </span>
   </a>
@@ -2165,6 +2176,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#for-developers-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For developers: hooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2193,21 +2215,29 @@
 
 
 <h1 id="advanced-usage-your-tool-of-choice">Advanced Usage (Your Tool of Choice)<a class="headerlink" href="#advanced-usage-your-tool-of-choice" title="Permanent link">&para;</a></h1>
-<p>This page is about taking your agent tool to the next level: reusable prompts, persistent instructions, automation hooks, and "background" execution.</p>
+<p>This page is about taking your agent tool to the next level: reusable prompts, persistent instructions, and "background" execution.</p>
 <p>If you are not comfortable yet with the basics (plan -&gt; do -&gt; verify, diffs, sanity checks), do that first:</p>
 <ul>
 <li><a href="../workflows/">Workflows</a></li>
 <li><a href="../verification/">Verification and Rigor</a></li>
 </ul>
 <h2 id="the-big-unlocks">The big unlocks<a class="headerlink" href="#the-big-unlocks" title="Permanent link">&para;</a></h2>
-<p>Across most agent tools, these are the high-leverage features:</p>
+<p>Across most agent tools, these are the high-leverage features for scientists:</p>
 <ol>
-<li>Reusable prompts (slash commands, skills, prompt files)</li>
-<li>Persistent instructions (project rules, memory)</li>
-<li>Hooks (automate checks, formatting, guardrails)</li>
-<li>Background mode (async tasks, non-interactive runs, PR-based agents)</li>
-<li>Tool integrations (MCP, GitHub/Slack/Linear)</li>
+<li><strong>Persistent instructions</strong> (project rules, memory) - tell the agent your conventions once</li>
+<li><strong>Reusable prompts</strong> (slash commands, skills, prompt files) - encode your lab's workflows</li>
+<li><strong>Background mode</strong> (async tasks, non-interactive runs) - start a task and come back later</li>
 </ol>
+<h2 id="persistent-instructions-tell-it-once">Persistent instructions: tell it once<a class="headerlink" href="#persistent-instructions-tell-it-once" title="Permanent link">&para;</a></h2>
+<p>Instead of repeating "do not change scientific assumptions" every session, you can store instructions that load automatically.</p>
+<p>Most tools support a project-level file (like <code>CLAUDE.md</code> or <code>AGENTS.md</code>) where you write:</p>
+<ul>
+<li>coding conventions</li>
+<li>verification requirements</li>
+<li>"always do X before Y" rules</li>
+<li>project-specific context</li>
+</ul>
+<p>This is the single highest-leverage feature. Start here.</p>
 <h2 id="reusable-prompts-stop-retyping-yourself">Reusable prompts: stop retyping yourself<a class="headerlink" href="#reusable-prompts-stop-retyping-yourself" title="Permanent link">&para;</a></h2>
 <p>Good reusable prompts encode your lab's defaults:</p>
 <ul>
@@ -2216,15 +2246,7 @@
 <li>"Run verification"</li>
 <li>"Summarize the diff"</li>
 </ul>
-<h2 id="hooks-make-correctness-automatic">Hooks: make correctness automatic<a class="headerlink" href="#hooks-make-correctness-automatic" title="Permanent link">&para;</a></h2>
-<p>Hooks are the "seatbelts" for autonomy.</p>
-<p>Common good hooks:</p>
-<ul>
-<li>auto-format code on file edits</li>
-<li>block secrets from being committed</li>
-<li>require tests to run before marking a task done</li>
-<li>warn when the agent tries risky commands</li>
-</ul>
+<p>Most tools let you save these as slash commands (like <code>/review</code> or <code>/deploy</code>) that you can invoke instead of typing the full prompt each time.</p>
 <h2 id="background-mode-delegate-and-come-back">Background mode: delegate and come back<a class="headerlink" href="#background-mode-delegate-and-come-back" title="Permanent link">&para;</a></h2>
 <p>Different tools implement this differently:</p>
 <ul>
@@ -2235,20 +2257,26 @@
 <p>The rule is the same: do not trust results until you review diffs and run checks.</p>
 <h2 id="official-docs-to-go-deeper">Official docs to go deeper<a class="headerlink" href="#official-docs-to-go-deeper" title="Permanent link">&para;</a></h2>
 <h3 id="claude-code">Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h3>
-<p>Claude Code is the default tool in this guide. These links cover the advanced features you asked about (skills, hooks, subagents, background execution, etc.).</p>
+<p>Claude Code is the default tool in this guide.</p>
+<p><strong>Start here:</strong></p>
 <ul>
-<li><a href="https://code.claude.com/docs/en/features-overview.md">Extend overview</a> (CLAUDE.md, Skills, subagents, hooks, MCP, plugins)</li>
+<li><a href="https://code.claude.com/docs/en/memory.md">Memory</a> (CLAUDE.md - persistent project instructions)</li>
 <li><a href="https://code.claude.com/docs/en/skills.md">Skills</a> (custom slash commands / reusable prompts)</li>
-<li><a href="https://code.claude.com/docs/en/hooks-guide.md">Hooks guide</a> (how to automate workflows with hooks)</li>
-<li><a href="https://code.claude.com/docs/en/hooks.md">Hooks reference</a> (events and schemas)</li>
-<li><a href="https://code.claude.com/docs/en/sub-agents.md">Subagents</a> (specialized agents for task-specific workflows)</li>
-<li><a href="https://code.claude.com/docs/en/memory.md">Memory</a> (project and user memory, persistence across sessions)</li>
-<li><a href="https://code.claude.com/docs/en/headless.md">Headless mode</a> (run Claude Code programmatically)</li>
-<li><a href="https://code.claude.com/docs/en/claude-code-on-the-web.md">Claude Code on the web</a> (async tasks)</li>
+<li><a href="https://code.claude.com/docs/en/claude-code-on-the-web.md">Claude Code on the web</a> (background/async tasks)</li>
+<li><a href="https://code.claude.com/docs/en/costs.md">Cost management</a></li>
+</ul>
+<p><strong>Reference:</strong></p>
+<ul>
+<li><a href="https://code.claude.com/docs/en/features-overview.md">Extend overview</a> (full feature summary)</li>
 <li><a href="https://code.claude.com/docs/en/cli-reference.md">CLI reference</a></li>
 <li><a href="https://code.claude.com/docs/en/settings.md">Settings</a></li>
-<li><a href="https://code.claude.com/docs/en/costs.md">Cost management</a></li>
 <li><a href="https://code.claude.com/docs/en/sandboxing.md">Sandboxing</a></li>
+</ul>
+<p><strong>For developers:</strong></p>
+<ul>
+<li><a href="https://code.claude.com/docs/en/hooks-guide.md">Hooks guide</a> (automate workflows with scripts)</li>
+<li><a href="https://code.claude.com/docs/en/sub-agents.md">Subagents</a> (spawn specialized workers)</li>
+<li><a href="https://code.claude.com/docs/en/headless.md">Headless mode</a> (run programmatically)</li>
 </ul>
 <h3 id="openai-codex">OpenAI Codex<a class="headerlink" href="#openai-codex" title="Permanent link">&para;</a></h3>
 <p>If you already pay for a ChatGPT plan, Codex can be a great way to get an agentic workflow without adding another subscription.</p>
@@ -2281,13 +2309,20 @@
 <h2 id="a-scientist-friendly-way-to-use-advanced-features">A scientist-friendly way to use advanced features<a class="headerlink" href="#a-scientist-friendly-way-to-use-advanced-features" title="Permanent link">&para;</a></h2>
 <p>If you want to adopt one advanced feature at a time, do it in this order:</p>
 <ol>
-<li>Persistent instructions (project rules)</li>
-<li>Reusable prompts for your top 3 workflows</li>
-<li>Hooks for tests / formatting / safety</li>
-<li>Background tasks</li>
-<li>Tool integrations (MCP)</li>
+<li><strong>Persistent instructions</strong> - set up a project rules file with your conventions</li>
+<li><strong>Reusable prompts</strong> - save your top 3 workflows as slash commands</li>
+<li><strong>Background tasks</strong> - learn to start longer tasks and review them later</li>
+<li><strong>Tool integrations (MCP)</strong> - connect to databases, Slack, or other services if needed</li>
 </ol>
 <p>Each step should make your work more reproducible and less error-prone.</p>
+<h2 id="for-developers-hooks">For developers: hooks<a class="headerlink" href="#for-developers-hooks" title="Permanent link">&para;</a></h2>
+<p>If you have software engineering experience, hooks let you run scripts automatically when specific events happen (file edits, before commits, etc.). They're powerful for enforcing guardrails like:</p>
+<ul>
+<li>auto-format code on file edits</li>
+<li>block secrets from being committed</li>
+<li>require tests to pass before marking done</li>
+</ul>
+<p>Most scientists can skip this feature initially. The verification habits in this guide give you the same safety without writing code.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../mcp/">MCP &amp; Connectors</a></li>
