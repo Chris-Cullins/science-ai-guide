@@ -1865,11 +1865,11 @@
 <ul>
 <li><strong>Why a divide between the AI users and naysayers?</strong> - In software development, you will find two camps: people using these tools productively, and people saying they are useless, write terrible code, or are a scam.</li>
 </ul>
-<p>In my opinion, the bifurcation mostly comes down to whether someone has made the workflow "paradigm shift" and built the skill of using these tools effectively. I suspect it will be the exact same in the sciences.</p>
+<p>In my opinion, the bifurcation mostly comes down to whether someone has made the workflow "paradigm shift" and built the skill of engineering systems around the limitations. I suspect it will be the exact same in the sciences.</p>
 <ul>
-<li><strong>A large part of your job moving forward is being an agentic AI engineer</strong> - I don't mean someone necessarily working on the models themselves. I mean: in many knowledge fields, a lot of the job becomes building workflows and systems that work around current limitations (context windows, tool reliability, where errors come from, etc.).</li>
+<li><strong>A large part of your job moving forward is being an agentic AI engineer</strong> - I don't mean someone necessarily working on the models themselves. I mean: in many knowledge fields, a lot of the job becomes building workflows and systems that work around current limitations (context windows, no persistent memory, etc).</li>
 </ul>
-<p>Example: many users notice that once a conversation gets long, the model can become noticeably worse. A common workaround is to break tasks into smaller chunks so the needed information stays small, then build a loop that executes those chunks until the job is done.</p>
+<p>Example: many users notice that once a conversation gets to beyond roughly 45% of the context window limit, the model can become noticeably worse, start to get confused about what it's "doing", etc. How do you work around that fact? That's the question you should always be asking yourself. In this case, it's breaking a larger task up into smaller pieces, then looping calls to the agentic harness (claude code for instance) through those tasks, so it stays focused on each piece and doesn't get confused. </p>
 <ul>
 <li>
 <p><strong>You'll know when you're doing it correctly</strong> - Because you will (and I'm completely serious) feel like a superhuman.</p>
