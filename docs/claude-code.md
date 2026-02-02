@@ -7,14 +7,40 @@ Claude Code is an agentic coding tool that runs in your terminal and can edit fi
 - A Claude subscription (Pro/Max/Team/Enterprise) or a Claude Console account
 
 Official docs:
-- https://docs.anthropic.com/en/docs/claude-code/overview
+- [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
 ## Install
 
-From the official instructions (macOS/Linux/WSL):
+From the official instructions:
+
+macOS / Linux / WSL
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Windows PowerShell
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+Windows CMD
+
+```batch
+curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
+
+Windows (WinGet)
+
+```powershell
+winget install Anthropic.ClaudeCode
+```
+
+macOS (Homebrew)
+
+```bash
+brew install --cask claude-code
 ```
 
 Then:
@@ -23,6 +49,8 @@ Then:
 cd your-project
 claude
 ```
+
+If you're prompted to log in on first use, follow the browser flow.
 
 ## How scientists should use it (default guardrails)
 
