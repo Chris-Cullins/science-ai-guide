@@ -2,14 +2,18 @@
 
 This is a deliberately "aha"-style experience.
 
-You will use an agentic tool (Claude Code) to download this guide onto your computer, then have the agent walk you through it interactively.
+You will use an agentic tool to download this guide onto your computer, then have the agent walk you through it interactively.
+
+This guide uses Claude Code as the default tool, but you do not have to use Claude Code. Use whatever tool you already have and like.
+
+See: [Pick Your Tools](tooling.md)
 
 Note: if there is something in this guide you do not understand, ask your tool of choice to explain it. That is one of the best ways to learn fast.
 
 ## What you will do
 
-1. Install Claude Code
-2. Start Claude Code in a fresh folder
+1. Install your agent tool
+2. Start it in a fresh folder
 3. Paste a single prompt
 4. Let the agent:
    - download the guide (from GitHub)
@@ -23,13 +27,15 @@ The prompt below asks the agent to run shell commands (`curl`, `tar`, etc.).
 
 If you do not recognize a command, ask it to explain before you approve it.
 
-## Step 1: Install Claude Code
+## Step 1: Install an agent tool
 
-See: [Claude Code](claude-code.md)
+Default path in this guide:
 
-If you already pay for ChatGPT, you can do a very similar experience with [OpenAI Codex CLI](https://github.com/openai/codex). This page uses Claude Code as the default path.
+- [Claude Code](claude-code.md)
 
-## Step 2: Start Claude Code
+If you already pay for ChatGPT, you can do a very similar experience with [OpenAI Codex CLI](https://github.com/openai/codex) (a terminal-based coding agent).
+
+## Step 2: Start your agent tool
 
 Open a terminal: [Open a Terminal](open-terminal.md)
 
@@ -41,7 +47,15 @@ cd ~/agentic-ai-guide-tour
 claude
 ```
 
-## Step 3: Paste this prompt into Claude Code
+If you are using Codex CLI instead:
+
+```bash
+mkdir -p ~/agentic-ai-guide-tour
+cd ~/agentic-ai-guide-tour
+codex
+```
+
+## Step 3: Paste this prompt into your tool
 
 Replace nothing; just paste.
 
@@ -71,7 +85,7 @@ Rules:
 
 ## If you are on Windows
 
-Claude Code can run in Windows shells. If the `tar` command is not available, ask the agent to use a zip download + PowerShell `Expand-Archive` instead.
+If the `tar` command is not available, ask the agent to use a zip download + PowerShell `Expand-Archive` instead.
 
 ## What success looks like
 
