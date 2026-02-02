@@ -32,6 +32,10 @@ The main takeaways I want you to know are:
 
 6. **It will take time, though** - Using these tools is absolutely a skill. The faster you dive into learning it, the faster you'll get there. I'm not sure it's optional anymore, so get going; this is a decent place to start.
 
+7. **You will need to fix your "muscle memory"** - If you are reading something and think of a question, or you have an annoyance in your life you wish someone had fixed already, your first instinct should increasingly become: "let me ask a model what my options are to fix this problem".
+
+   It can feel unnatural at first (or even a bit slimy), but it will often get you to a solution much faster. In many cases, you will start solving problems you would not have bothered with before, because the ROI is so much better when the upfront effort drops close to zero.
+
 ## Where to go next
 
 - Start reading: [What This Guide Is](overview.md)
