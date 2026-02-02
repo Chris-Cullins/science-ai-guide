@@ -55,4 +55,4 @@ pwd
 
 If it prints a folder path, you are good.
 
-Next: `docs/cli-basics.md`
+Next: [Terminal Basics](cli-basics.md)
