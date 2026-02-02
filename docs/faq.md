@@ -63,9 +63,9 @@ This is not legal advice.
 
 It changes constantly. As of early 2026:
 
-- **Claude (Sonnet/Opus)**: strong at multi-file refactors, long context, and reasoning
-- **GPT-4 / GPT-4o**: good general-purpose, wide tool ecosystem
-- **Gemini**: strong at very long documents and multimodal tasks
+- **Claude (Opus 4.5 / Sonnet 4.5)**: strong at multi-file refactors, long context, and reasoning
+- **GPT-5.2 (High Thinking)**: excellent reasoning, great for complex debugging
+- **Gemini 3 Pro**: strong at very long documents and multimodal tasks
 
 For most scientist workflows, any of the top-tier models will work. Pick based on what your institution supports and what you can afford.
 
