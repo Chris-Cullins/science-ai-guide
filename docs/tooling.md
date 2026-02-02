@@ -14,9 +14,9 @@ Start here: [Claude Code](claude-code.md)
 
 ## Alternatives (common)
 
-- Cursor: AI-first code editor with agent features
-- GitHub Copilot: agent/chat inside IDEs + GitHub
-- ChatGPT: strong general assistant; can be great for planning, math, writing, and "explain this"
+- [Cursor](https://cursor.com/): AI-first code editor with agent features
+- [GitHub Copilot](https://github.com/features/copilot): agent/chat inside IDEs + GitHub
+- [OpenAI Codex CLI](https://github.com/openai/codex): coding agent that runs in your terminal
 
 ## What matters more than the tool
 
