@@ -64,6 +64,7 @@ nav:
       - Reproducibility: reproducibility.md
   - Advanced:
       - MCP & Connectors: mcp.md
+      - Scaling Up Your Usage: scaling-up.md
       - Troubleshooting: troubleshooting.md
   - Reference:
       - Prompt Templates (Copy/Paste): prompts.md
