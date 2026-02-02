@@ -1921,15 +1921,29 @@
 <li>A Claude subscription (Pro/Max/Team/Enterprise) or a Claude Console account</li>
 </ul>
 <p>Official docs:
-- https://docs.anthropic.com/en/docs/claude-code/overview</p>
+- <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code overview</a></p>
 <h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
-<p>From the official instructions (macOS/Linux/WSL):</p>
+<p>From the official instructions:</p>
+<p>macOS / Linux / WSL</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</code></pre></div>
+<p>Windows PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">claude</span><span class="p">.</span><span class="n">ai</span><span class="p">/</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">iex</span>
+</code></pre></div>
+<p>Windows CMD</p>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://claude.ai/install.cmd -o install.cmd <span class="p">&amp;&amp;</span> install.cmd <span class="p">&amp;&amp;</span> <span class="k">del</span> install.cmd
+</code></pre></div>
+<p>Windows (WinGet)</p>
+<div class="highlight"><pre><span></span><code><span class="n">winget</span> <span class="n">install</span> <span class="n">Anthropic</span><span class="p">.</span><span class="n">ClaudeCode</span>
+</code></pre></div>
+<p>macOS (Homebrew)</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>claude-code
 </code></pre></div>
 <p>Then:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>your-project
 claude
 </code></pre></div>
+<p>If you're prompted to log in on first use, follow the browser flow.</p>
 <h2 id="how-scientists-should-use-it-default-guardrails">How scientists should use it (default guardrails)<a class="headerlink" href="#how-scientists-should-use-it-default-guardrails" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Start with a throwaway repo or a copy of your project.</li>
