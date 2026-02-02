@@ -1,30 +1,243 @@
 # Project Structure That Works With Agents
 
-Most pain comes from messy structure. Fixing structure pays off.
+Most pain in scientific computing comes from messy project structure: scattered scripts, unclear dependencies, outputs mixed with code, and no clear way to reproduce results. Agentic AI makes this worse (it can create chaos faster) but also better (it can help you organize).
 
-## A simple layout
+This page covers how to structure projects so both humans and agents can work effectively.
 
-This works for many labs:
+## Why structure matters for agents
+
+Agents navigate your project by reading files and understanding their relationships. When structure is clear:
+
+- The agent knows where to find things
+- The agent knows where to put new things
+- You know where to look when reviewing changes
+- Reproducing results becomes trivial
+
+When structure is messy, the agent makes it messier.
+
+## A structure that works
 
 ```text
 project/
-  README.md
-  pyproject.toml (or requirements.txt)
-  data/            # raw or external data references
-  src/             # code
-  notebooks/       # exploratory work
-  scripts/         # entry points
-  results/         # generated outputs (often gitignored)
-  configs/         # parameter sets for runs
-  tests/           # sanity checks
+├── README.md              # What this is, how to run it
+├── pyproject.toml         # Dependencies and project metadata
+├── Makefile               # Canonical commands (make test, make figures)
+│
+├── configs/               # Parameter files for different runs
+│   ├── default.yaml
+│   ├── paper_fig1.yaml
+│   └── experiment_2.yaml
+│
+├── data/
+│   ├── raw/               # Original data (never modify)
+│   ├── processed/         # Cleaned/transformed data
+│   └── README.md          # Data sources and descriptions
+│
+├── src/                   # Your actual code
+│   ├── __init__.py
+│   ├── analysis.py
+│   ├── preprocessing.py
+│   └── visualization.py
+│
+├── scripts/               # Entry points that use src/
+│   ├── run_analysis.py
+│   ├── make_figures.py
+│   └── preprocess_data.py
+│
+├── notebooks/             # Exploratory work (not for production)
+│   └── exploration.ipynb
+│
+├── tests/                 # Automated tests
+│   ├── test_analysis.py
+│   └── test_preprocessing.py
+│
+└── results/               # Generated outputs (often gitignored)
+    ├── figures/
+    ├── tables/
+    └── logs/
 ```
 
-## One-command runs
+This isn't the only valid structure, but it's a good default that agents understand well.
 
-Pick a canonical command, for example:
+## The key principles
 
-- `make figures`
-- `make test`
-- `python -m yourpackage.run --config configs/paper.yaml`
+### Separate code from data from results
 
-Agents are much more reliable when "done" is defined as "this command passes".
+- **Code** (`src/`, `scripts/`): Versioned in git, the source of truth
+- **Data** (`data/`): Usually not in git (too large), documented in README
+- **Results** (`results/`): Generated from code + data, can be regenerated
+
+If you can regenerate something from code, don't put it in git.
+
+### One-command runs
+
+Define canonical commands that anyone (human or agent) can run:
+
+```makefile
+# Makefile
+
+.PHONY: test figures clean
+
+test:
+    pytest tests/
+
+figures:
+    python scripts/make_figures.py --config configs/paper.yaml
+
+clean:
+    rm -rf results/figures/*
+```
+
+When "done" means "this command passes," both you and the agent have a clear target.
+
+### Configs, not magic numbers
+
+Instead of hardcoding parameters in your code:
+
+```python
+# Bad
+learning_rate = 0.001
+batch_size = 32
+```
+
+Put them in config files:
+
+```yaml
+# configs/default.yaml
+model:
+  learning_rate: 0.001
+  batch_size: 32
+data:
+  input_path: data/processed/dataset.csv
+  test_fraction: 0.2
+output:
+  figures_dir: results/figures/
+  seed: 42
+```
+
+Then load them:
+
+```python
+# Good
+import yaml
+
+with open("configs/default.yaml") as f:
+    config = yaml.safe_load(f)
+
+learning_rate = config["model"]["learning_rate"]
+```
+
+This makes it trivial to:
+- See what parameters were used
+- Reproduce a specific run
+- Try different settings
+
+### Raw data is sacred
+
+Never modify files in `data/raw/`. If you need to clean or transform data, write a script that reads from `raw/` and writes to `processed/`:
+
+```python
+# scripts/preprocess_data.py
+def main():
+    raw = pd.read_csv("data/raw/experiment_output.csv")
+    cleaned = preprocess(raw)  # Your cleaning logic
+    cleaned.to_csv("data/processed/cleaned_data.csv", index=False)
+```
+
+This way you can always start over from the original data.
+
+### Document data sources
+
+Create a `data/README.md` that explains:
+
+```markdown
+# Data
+
+## raw/experiment_output.csv
+- Source: Lab instrument export, 2025-11-15
+- Contact: Jane Doe
+- Notes: Contains raw sensor readings, some NaN values expected
+
+## processed/cleaned_data.csv
+- Generated by: scripts/preprocess_data.py
+- From: raw/experiment_output.csv
+- Transformations: Remove NaN rows, normalize columns A-D
+```
+
+Future you will thank present you.
+
+## A prompt for organizing a messy project
+
+```text
+Help me reorganize this project for reproducibility.
+
+Current state:
+- Scripts are scattered in the root directory
+- Parameters are hardcoded
+- No clear entry point
+
+Target structure:
+- src/ for modules, scripts/ for entry points
+- configs/ for parameters
+- Makefile with `make test` and `make figures`
+- README explaining how to run
+
+Rules:
+- Do not change scientific logic
+- Move files, don't delete (I'll review and clean up)
+- Create configs from hardcoded values
+- Propose a plan before making changes
+```
+
+## Common mistakes to avoid
+
+### Too much in one file
+
+If a file is >500 lines, it probably does too much. Split into modules.
+
+### Notebooks as source of truth
+
+Notebooks are great for exploration, but they're hard to diff, test, and reproduce. Convert important analyses to scripts.
+
+### Results checked into git
+
+Generated files bloat your repo and create merge conflicts. Gitignore them and regenerate as needed.
+
+### No README
+
+If someone (including future you) can't figure out how to run your code in 5 minutes, add a README.
+
+### Unclear entry points
+
+"Which script do I run?" should have an obvious answer. Use a Makefile or a single main script.
+
+## Setting up a new project
+
+When starting fresh, create the structure upfront:
+
+```bash
+mkdir -p project/{src,scripts,data/{raw,processed},configs,tests,results/{figures,tables}}
+touch project/README.md project/Makefile project/pyproject.toml
+touch project/src/__init__.py
+```
+
+Or ask an agent:
+
+```text
+Set up a new Python project for scientific analysis.
+
+Include:
+- Standard directory structure (src, scripts, data, configs, tests, results)
+- pyproject.toml with basic dependencies (numpy, pandas, matplotlib, pytest)
+- Makefile with test and figures targets
+- README template
+- .gitignore for Python projects
+
+Do not add any actual analysis code yet, just the structure.
+```
+
+## See also
+
+- [Git Basics](git-basics.md)
+- [Reproducibility](reproducibility.md)
+- [Data Analysis](data-analysis.md)
