@@ -1,6 +1,6 @@
 # Advanced Usage (Your Tool of Choice)
 
-This page is about taking your agent tool to the next level: reusable prompts, persistent instructions, automation hooks, and "background" execution.
+This page is about taking your agent tool to the next level: reusable prompts, persistent instructions, and "background" execution.
 
 If you are not comfortable yet with the basics (plan -> do -> verify, diffs, sanity checks), do that first:
 
@@ -9,13 +9,24 @@ If you are not comfortable yet with the basics (plan -> do -> verify, diffs, san
 
 ## The big unlocks
 
-Across most agent tools, these are the high-leverage features:
+Across most agent tools, these are the high-leverage features for scientists:
 
-1. Reusable prompts (slash commands, skills, prompt files)
-2. Persistent instructions (project rules, memory)
-3. Hooks (automate checks, formatting, guardrails)
-4. Background mode (async tasks, non-interactive runs, PR-based agents)
-5. Tool integrations (MCP, GitHub/Slack/Linear)
+1. **Persistent instructions** (project rules, memory) - tell the agent your conventions once
+2. **Reusable prompts** (slash commands, skills, prompt files) - encode your lab's workflows
+3. **Background mode** (async tasks, non-interactive runs) - start a task and come back later
+
+## Persistent instructions: tell it once
+
+Instead of repeating "do not change scientific assumptions" every session, you can store instructions that load automatically.
+
+Most tools support a project-level file (like `CLAUDE.md` or `AGENTS.md`) where you write:
+
+- coding conventions
+- verification requirements
+- "always do X before Y" rules
+- project-specific context
+
+This is the single highest-leverage feature. Start here.
 
 ## Reusable prompts: stop retyping yourself
 
@@ -26,16 +37,7 @@ Good reusable prompts encode your lab's defaults:
 - "Run verification"
 - "Summarize the diff"
 
-## Hooks: make correctness automatic
-
-Hooks are the "seatbelts" for autonomy.
-
-Common good hooks:
-
-- auto-format code on file edits
-- block secrets from being committed
-- require tests to run before marking a task done
-- warn when the agent tries risky commands
+Most tools let you save these as slash commands (like `/review` or `/deploy`) that you can invoke instead of typing the full prompt each time.
 
 ## Background mode: delegate and come back
 
@@ -51,20 +53,27 @@ The rule is the same: do not trust results until you review diffs and run checks
 
 ### Claude Code
 
-Claude Code is the default tool in this guide. These links cover the advanced features you asked about (skills, hooks, subagents, background execution, etc.).
+Claude Code is the default tool in this guide.
 
-- [Extend overview](https://code.claude.com/docs/en/features-overview.md) (CLAUDE.md, Skills, subagents, hooks, MCP, plugins)
+**Start here:**
+
+- [Memory](https://code.claude.com/docs/en/memory.md) (CLAUDE.md - persistent project instructions)
 - [Skills](https://code.claude.com/docs/en/skills.md) (custom slash commands / reusable prompts)
-- [Hooks guide](https://code.claude.com/docs/en/hooks-guide.md) (how to automate workflows with hooks)
-- [Hooks reference](https://code.claude.com/docs/en/hooks.md) (events and schemas)
-- [Subagents](https://code.claude.com/docs/en/sub-agents.md) (specialized agents for task-specific workflows)
-- [Memory](https://code.claude.com/docs/en/memory.md) (project and user memory, persistence across sessions)
-- [Headless mode](https://code.claude.com/docs/en/headless.md) (run Claude Code programmatically)
-- [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web.md) (async tasks)
+- [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web.md) (background/async tasks)
+- [Cost management](https://code.claude.com/docs/en/costs.md)
+
+**Reference:**
+
+- [Extend overview](https://code.claude.com/docs/en/features-overview.md) (full feature summary)
 - [CLI reference](https://code.claude.com/docs/en/cli-reference.md)
 - [Settings](https://code.claude.com/docs/en/settings.md)
-- [Cost management](https://code.claude.com/docs/en/costs.md)
 - [Sandboxing](https://code.claude.com/docs/en/sandboxing.md)
+
+**For developers:**
+
+- [Hooks guide](https://code.claude.com/docs/en/hooks-guide.md) (automate workflows with scripts)
+- [Subagents](https://code.claude.com/docs/en/sub-agents.md) (spawn specialized workers)
+- [Headless mode](https://code.claude.com/docs/en/headless.md) (run programmatically)
 
 ### OpenAI Codex
 
@@ -101,13 +110,22 @@ Cursor moves quickly and its docs are the best source of truth:
 
 If you want to adopt one advanced feature at a time, do it in this order:
 
-1. Persistent instructions (project rules)
-2. Reusable prompts for your top 3 workflows
-3. Hooks for tests / formatting / safety
-4. Background tasks
-5. Tool integrations (MCP)
+1. **Persistent instructions** - set up a project rules file with your conventions
+2. **Reusable prompts** - save your top 3 workflows as slash commands
+3. **Background tasks** - learn to start longer tasks and review them later
+4. **Tool integrations (MCP)** - connect to databases, Slack, or other services if needed
 
 Each step should make your work more reproducible and less error-prone.
+
+## For developers: hooks
+
+If you have software engineering experience, hooks let you run scripts automatically when specific events happen (file edits, before commits, etc.). They're powerful for enforcing guardrails like:
+
+- auto-format code on file edits
+- block secrets from being committed
+- require tests to pass before marking done
+
+Most scientists can skip this feature initially. The verification habits in this guide give you the same safety without writing code.
 
 ## See also
 
