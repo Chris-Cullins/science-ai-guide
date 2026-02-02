@@ -22,8 +22,3 @@ Not by default.
 
 If you did not provide sources, assume citations may be invented.
 
-## Should I give it access to my email/files?
-
-Default recommendation: no.
-
-Only connect sensitive systems if you understand the permissions and your institution allows it.
