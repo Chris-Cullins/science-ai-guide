@@ -57,6 +57,7 @@ nav:
       - Figures & Tables: figures.md
       - Coding & Refactors: coding.md
       - Writing & Grants: writing.md
+      - LaTeX & Math: latex.md
   - Lab Ops:
       - Lab Rollout: lab-rollout.md
       - Lab Policy Template: lab-policy-template.md
