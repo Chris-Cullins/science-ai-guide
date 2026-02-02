@@ -63,6 +63,7 @@ nav:
       - Lab Policy Template: lab-policy-template.md
       - Reproducibility: reproducibility.md
   - Advanced:
+      - Advanced Usage (Tooling): advanced-usage.md
       - MCP & Connectors: mcp.md
       - Scaling Up Your Usage: scaling-up.md
       - Troubleshooting: troubleshooting.md
