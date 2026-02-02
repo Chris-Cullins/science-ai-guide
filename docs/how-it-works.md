@@ -32,6 +32,8 @@ Common causes:
 - They only see what is placed in their context.
 - Longer context generally costs more and can be noisier.
 
+**Important:** As conversations grow longer, model performance often degrades. A common rule of thumb: once you hit roughly 40-50% of the context window, the model may start getting confused, forgetting earlier instructions, or producing lower-quality output. The fix is to break large tasks into smaller sessions, or start fresh when you notice quality dropping.
+
 ## What makes agentic AI powerful
 
 - It can try something, see it fail, and fix it.
@@ -45,3 +47,9 @@ Common causes:
 - It can run commands you did not understand.
 
 Your control points are: scope, diffs, and verification.
+
+## See also
+
+- [Workflows (Plan-Do-Verify)](workflows.md)
+- [Verification and Rigor](verification.md)
+- [Troubleshooting](troubleshooting.md)

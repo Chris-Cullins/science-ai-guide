@@ -18,3 +18,10 @@ Agentic AI can change many files quickly. Reproducibility is how you keep that p
 
 1. A `Makefile` (or `justfile`) that encodes the canonical commands.
 2. A `configs/` folder with "paper-ready" configs checked into the repo.
+
+## See also
+
+- [Data Analysis](data-analysis.md)
+- [Figures and Tables](figures.md)
+- [Verification and Rigor](verification.md)
+- [Lab Rollout](lab-rollout.md)

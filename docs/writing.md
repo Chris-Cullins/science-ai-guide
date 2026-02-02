@@ -32,3 +32,9 @@ Rules:
 - Do not change scientific claims.
 - If something is unclear, ask questions instead of guessing.
 ```
+
+## See also
+
+- [Literature and Notes](literature.md)
+- [Disclosure](disclosure.md)
+- [Prompt Templates](prompts.md)

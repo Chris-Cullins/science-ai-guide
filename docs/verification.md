@@ -50,3 +50,22 @@ But do not confuse "two models agree" with truth. They can share the same blind 
 ## Reproducibility is part of verification
 
 If you cannot rerun it reliably, you cannot really verify it.
+
+## Staying sharp (avoiding skill atrophy)
+
+Heavy AI use can erode your own abilities if you are not deliberate.
+
+Habits that help:
+
+- **Do some work by hand**: One derivation per week, one script without AI assistance.
+- **Explain it back**: After the AI solves something, explain the solution to yourself (or a colleague). If you cannot, you did not learn.
+- **Require explanations**: Ask the AI to explain its reasoning, then evaluate whether the reasoning is sound.
+- **Periodically calibrate**: Try a task without AI, then with AI. Notice what you would have missed.
+
+The goal is not to avoid AI, but to ensure you remain capable of catching its mistakes.
+
+## See also
+
+- [Workflows (Plan-Do-Verify)](workflows.md)
+- [Troubleshooting](troubleshooting.md)
+- [Reproducibility](reproducibility.md)

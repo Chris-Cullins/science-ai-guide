@@ -19,3 +19,9 @@ Figures are where incorrect code becomes persuasive.
 - plot a small random subsample to ensure it behaves
 - include axis labels and units
 - store intermediate summaries (counts, means) for sanity
+
+## See also
+
+- [Data Analysis](data-analysis.md)
+- [Reproducibility](reproducibility.md)
+- [Prompt Templates](prompts.md)

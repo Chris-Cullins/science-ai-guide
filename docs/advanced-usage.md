@@ -53,79 +53,49 @@ The rule is the same: do not trust results until you review diffs and run checks
 
 Claude Code is the default tool in this guide. These links cover the advanced features you asked about (skills, hooks, subagents, background execution, etc.).
 
-- Extend overview (CLAUDE.md, Skills, subagents, hooks, MCP, plugins):
-  https://code.claude.com/docs/en/features-overview.md
-- Skills (custom slash commands / reusable prompts):
-  https://code.claude.com/docs/en/skills.md
-- Hooks guide (how to automate workflows with hooks):
-  https://code.claude.com/docs/en/hooks-guide.md
-- Hooks reference (events and schemas):
-  https://code.claude.com/docs/en/hooks.md
-- Subagents (specialized agents for task-specific workflows):
-  https://code.claude.com/docs/en/sub-agents.md
-- Memory (project and user memory, persistence across sessions):
-  https://code.claude.com/docs/en/memory.md
-- Run Claude Code programmatically / headless mode:
-  https://code.claude.com/docs/en/headless.md
-- Claude Code on the web (async tasks):
-  https://code.claude.com/docs/en/claude-code-on-the-web.md
-- CLI reference:
-  https://code.claude.com/docs/en/cli-reference.md
-- Settings:
-  https://code.claude.com/docs/en/settings.md
-- Cost management:
-  https://code.claude.com/docs/en/costs.md
-- Sandboxing:
-  https://code.claude.com/docs/en/sandboxing.md
+- [Extend overview](https://code.claude.com/docs/en/features-overview.md) (CLAUDE.md, Skills, subagents, hooks, MCP, plugins)
+- [Skills](https://code.claude.com/docs/en/skills.md) (custom slash commands / reusable prompts)
+- [Hooks guide](https://code.claude.com/docs/en/hooks-guide.md) (how to automate workflows with hooks)
+- [Hooks reference](https://code.claude.com/docs/en/hooks.md) (events and schemas)
+- [Subagents](https://code.claude.com/docs/en/sub-agents.md) (specialized agents for task-specific workflows)
+- [Memory](https://code.claude.com/docs/en/memory.md) (project and user memory, persistence across sessions)
+- [Headless mode](https://code.claude.com/docs/en/headless.md) (run Claude Code programmatically)
+- [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web.md) (async tasks)
+- [CLI reference](https://code.claude.com/docs/en/cli-reference.md)
+- [Settings](https://code.claude.com/docs/en/settings.md)
+- [Cost management](https://code.claude.com/docs/en/costs.md)
+- [Sandboxing](https://code.claude.com/docs/en/sandboxing.md)
 
 ### OpenAI Codex
 
 If you already pay for a ChatGPT plan, Codex can be a great way to get an agentic workflow without adding another subscription.
 
-- Codex overview:
-  https://developers.openai.com/codex/
-- Codex CLI overview:
-  https://developers.openai.com/codex/cli
-- Codex CLI reference (flags/options):
-  https://developers.openai.com/codex/cli/reference
-- Codex CLI slash commands (reusable prompts):
-  https://developers.openai.com/codex/cli/slash-commands
-- Rules (persistent project instructions):
-  https://developers.openai.com/codex/rules
-- AGENTS.md (agent coordination patterns):
-  https://developers.openai.com/codex/guides/agents-md
-- Skills (create reusable skills):
-  https://developers.openai.com/codex/skills
-
-Codex CLI repo (install instructions and releases):
-
-- https://github.com/openai/codex
+- [Codex overview](https://developers.openai.com/codex/)
+- [Codex CLI overview](https://developers.openai.com/codex/cli)
+- [Codex CLI reference](https://developers.openai.com/codex/cli/reference) (flags/options)
+- [Codex CLI slash commands](https://developers.openai.com/codex/cli/slash-commands) (reusable prompts)
+- [Rules](https://developers.openai.com/codex/rules) (persistent project instructions)
+- [AGENTS.md](https://developers.openai.com/codex/guides/agents-md) (agent coordination patterns)
+- [Skills](https://developers.openai.com/codex/skills) (create reusable skills)
+- [Codex CLI repo](https://github.com/openai/codex) (install instructions and releases)
 
 ### GitHub Copilot
 
 Copilot has a large docs set. These are the most relevant advanced topics:
 
-- Main docs index:
-  https://docs.github.com/en/copilot
-- Custom instructions (personal/repo/org):
-  https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions
-- Prompt files (reusable prompts/templates):
-  https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/your-first-prompt-file
-- Agent skills:
-  https://docs.github.com/en/copilot/concepts/agents/about-agent-skills
-- Hooks (for Copilot coding agent):
-  https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks
-- MCP:
-  https://docs.github.com/en/copilot/concepts/context/mcp
+- [Main docs index](https://docs.github.com/en/copilot)
+- [Custom instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions) (personal/repo/org)
+- [Prompt files](https://docs.github.com/en/copilot/tutorials/customization-library/prompt-files/your-first-prompt-file) (reusable prompts/templates)
+- [Agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+- [Hooks](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-hooks) (for Copilot coding agent)
+- [MCP](https://docs.github.com/en/copilot/concepts/context/mcp)
 
 ### Cursor
 
 Cursor moves quickly and its docs are the best source of truth:
 
-- Docs:
-  https://cursor.com/docs
-- Pricing (to understand "background agents" and plan limits):
-  https://cursor.com/pricing
+- [Docs](https://cursor.com/docs)
+- [Pricing](https://cursor.com/pricing) (to understand "background agents" and plan limits)
 
 ## A scientist-friendly way to use advanced features
 
@@ -138,3 +108,9 @@ If you want to adopt one advanced feature at a time, do it in this order:
 5. Tool integrations (MCP)
 
 Each step should make your work more reproducible and less error-prone.
+
+## See also
+
+- [MCP & Connectors](mcp.md)
+- [Scaling Up Your Usage](scaling-up.md)
+- [Cost Control](cost-control.md)

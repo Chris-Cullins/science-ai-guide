@@ -35,8 +35,6 @@ If the agent needs to access something, use environment variables or local confi
 
 ## Human oversight
 
-## Human oversight
-
 Even if agentic AI can do a lot, you still need to:
 
 - inspect diffs
@@ -64,8 +62,6 @@ Safe defaults:
 - run in a repo, not your whole home directory
 - prefer throwaway copies for early experiments
 - review commands before running if you do not recognize them
-
-## Common failure modes
 
 ## Common failure modes
 

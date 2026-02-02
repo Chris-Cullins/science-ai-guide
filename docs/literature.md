@@ -30,3 +30,9 @@ This is an area where AI can help a lot, but it is also where it hallucinates th
 - One note per paper
 - One synthesis note per topic
 - A table of methods vs assumptions vs failure modes
+
+## See also
+
+- [Writing and Grants](writing.md)
+- [Prompt Templates](prompts.md)
+- [Verification and Rigor](verification.md)

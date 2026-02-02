@@ -31,3 +31,9 @@ These are the habits that make agentic AI safe and useful.
 - new citations you did not provide
 - big refactors without tests
 - plots with missing units or unclear preprocessing
+
+## See also
+
+- [Verification and Rigor](verification.md)
+- [Workflows (Plan-Do-Verify)](workflows.md)
+- [Troubleshooting](troubleshooting.md)
