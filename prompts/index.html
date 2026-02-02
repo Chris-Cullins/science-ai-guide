@@ -1800,6 +1800,83 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-debug-a-crashing-simulation-or-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Debug a crashing simulation or script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-review-code-for-correctness-before-trusting-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Review code for correctness before trusting results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-generate-synthetic-test-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Generate synthetic test data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-explain-inherited-or-unfamiliar-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Explain inherited or unfamiliar code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-add-tests-to-existing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) Add tests to existing code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-domain-specific-physics-numerical-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9) Domain-specific: physics / numerical work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-domain-specific-biology-life-sciences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10) Domain-specific: biology / life sciences
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1987,6 +2064,83 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-debug-a-crashing-simulation-or-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Debug a crashing simulation or script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-review-code-for-correctness-before-trusting-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Review code for correctness before trusting results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-generate-synthetic-test-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Generate synthetic test data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-explain-inherited-or-unfamiliar-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Explain inherited or unfamiliar code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-add-tests-to-existing-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) Add tests to existing code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-domain-specific-physics-numerical-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9) Domain-specific: physics / numerical work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-domain-specific-biology-life-sciences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10) Domain-specific: biology / life sciences
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2047,6 +2201,102 @@ Rules:
 
 Output:
 - Provide a revised version and a short list of what changed.
+</code></pre></div>
+<h2 id="4-debug-a-crashing-simulation-or-script">4) Debug a crashing simulation or script<a class="headerlink" href="#4-debug-a-crashing-simulation-or-script" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>My script crashes with the following error:
+&lt;paste error&gt;
+
+Context:
+- The script is in &lt;file path&gt;.
+- It is supposed to &lt;brief description of what it does&gt;.
+
+Task:
+- Identify the root cause.
+- Propose a fix.
+- Explain why it failed.
+
+Rules:
+- Do not change the scientific logic without asking.
+- If you need to see more files, ask.
+</code></pre></div>
+<h2 id="5-review-code-for-correctness-before-trusting-results">5) Review code for correctness before trusting results<a class="headerlink" href="#5-review-code-for-correctness-before-trusting-results" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>I need you to review this analysis code before I trust its outputs.
+
+Task:
+- Read the code carefully.
+- List any potential bugs, edge cases, or silent failures.
+- Check for common pitfalls: off-by-one errors, incorrect joins, unit mismatches, unintended type coercion.
+- Tell me what assumptions the code makes.
+
+Output:
+- A numbered list of issues (or &quot;none found&quot;).
+- Confidence level (high / medium / low) for each issue.
+</code></pre></div>
+<h2 id="6-generate-synthetic-test-data">6) Generate synthetic test data<a class="headerlink" href="#6-generate-synthetic-test-data" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>I need synthetic test data to validate my analysis pipeline.
+
+Context:
+- The real data has columns: &lt;list columns and types&gt;
+- The pipeline should produce &lt;expected output&gt;
+
+Task:
+- Generate a small synthetic dataset (10-50 rows) that exercises:
+  - Normal cases
+  - Edge cases (empty values, extreme values, boundary conditions)
+  - At least one case that should trigger a known behavior
+
+Output:
+- A CSV or code that generates the data.
+- A brief description of what each test case is meant to check.
+</code></pre></div>
+<h2 id="7-explain-inherited-or-unfamiliar-code">7) Explain inherited or unfamiliar code<a class="headerlink" href="#7-explain-inherited-or-unfamiliar-code" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>I inherited this codebase and need to understand it.
+
+Task:
+- Summarize what this code does at a high level.
+- Identify the main entry points.
+- List the key functions and their purposes.
+- Flag any confusing or non-obvious parts.
+
+Rules:
+- Do not change anything.
+- If something is unclear, say so rather than guessing.
+</code></pre></div>
+<h2 id="8-add-tests-to-existing-code">8) Add tests to existing code<a class="headerlink" href="#8-add-tests-to-existing-code" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Add tests for the following code.
+
+Context:
+- File(s): &lt;paths&gt;
+- Testing framework: &lt;pytest / unittest / other&gt;
+
+Task:
+- Write tests that cover:
+  - Normal operation
+  - Edge cases
+  - At least one failure case
+- Tests should be independent and fast.
+
+Rules:
+- Do not modify the original code unless necessary to make it testable.
+- If you need to refactor for testability, propose the change first.
+</code></pre></div>
+<h2 id="9-domain-specific-physics-numerical-work">9) Domain-specific: physics / numerical work<a class="headerlink" href="#9-domain-specific-physics-numerical-work" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>You are helping with a physics or numerical analysis project.
+
+Extra rules:
+- Always state units explicitly.
+- Check dimensional consistency.
+- For numerical code, consider precision, stability, and convergence.
+- When in doubt, add a limiting-case check or a back-of-the-envelope sanity test.
+</code></pre></div>
+<h2 id="10-domain-specific-biology-life-sciences">10) Domain-specific: biology / life sciences<a class="headerlink" href="#10-domain-specific-biology-life-sciences" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>You are helping with a biology or life sciences project.
+
+Extra rules:
+- Be careful with sequence data (orientation, indexing conventions).
+- Statistical tests must be appropriate for the data type (counts, proportions, continuous).
+- Do not invent gene names, pathways, or biological claims.
+- If working with patient or human-subject data, remind me to check privacy constraints.
 </code></pre></div>
 
 

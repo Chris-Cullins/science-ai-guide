@@ -1722,6 +1722,89 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#recovery-strategies-for-bigger-messes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery strategies for bigger messes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery strategies for bigger messes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-made-many-wrong-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent made many wrong changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-introduced-a-subtle-bug-in-mathstatistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent introduced a subtle bug in math/statistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-fixed-something-that-wasnt-broken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent "fixed" something that wasn't broken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-session-is-too-long-and-quality-has-dropped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The session is too long and quality has dropped
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preventing-problems-before-they-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preventing problems before they start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2009,6 +2092,89 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#recovery-strategies-for-bigger-messes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery strategies for bigger messes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery strategies for bigger messes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-made-many-wrong-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent made many wrong changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-introduced-a-subtle-bug-in-mathstatistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent introduced a subtle bug in math/statistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agent-fixed-something-that-wasnt-broken" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The agent "fixed" something that wasn't broken
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-session-is-too-long-and-quality-has-dropped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The session is too long and quality has dropped
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preventing-problems-before-they-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preventing problems before they start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See also
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2059,6 +2225,63 @@
 <li>use <code>git diff</code> to see what changed</li>
 <li>make a commit before big changes</li>
 <li>revert or back out changes rather than trying to patch blindly</li>
+</ul>
+<h2 id="recovery-strategies-for-bigger-messes">Recovery strategies for bigger messes<a class="headerlink" href="#recovery-strategies-for-bigger-messes" title="Permanent link">&para;</a></h2>
+<h3 id="the-agent-made-many-wrong-changes">The agent made many wrong changes<a class="headerlink" href="#the-agent-made-many-wrong-changes" title="Permanent link">&para;</a></h3>
+<p>If you caught it early:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>.<span class="w">          </span><span class="c1"># discard all uncommitted changes</span>
+git<span class="w"> </span>clean<span class="w"> </span>-fd<span class="w">           </span><span class="c1"># remove untracked files (careful!)</span>
+</code></pre></div></p>
+<p>If you already committed:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w">       </span><span class="c1"># find the last good commit</span>
+git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>&lt;hash&gt;<span class="w"> </span><span class="c1"># go back to it (loses later commits)</span>
+</code></pre></div></p>
+<p>If you want to keep some changes:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>stash<span class="w">               </span><span class="c1"># set aside current changes</span>
+git<span class="w"> </span>diff<span class="w"> </span>HEAD~3<span class="w">         </span><span class="c1"># review last 3 commits</span>
+<span class="c1"># cherry-pick what you want to keep</span>
+</code></pre></div></p>
+<h3 id="the-agent-introduced-a-subtle-bug-in-mathstatistics">The agent introduced a subtle bug in math/statistics<a class="headerlink" href="#the-agent-introduced-a-subtle-bug-in-mathstatistics" title="Permanent link">&para;</a></h3>
+<p>This is the hardest case because the code "works" but produces wrong results.</p>
+<p>Prevention is better than cure:
+- Always add sanity checks (known values, limiting cases)
+- Compare against a reference implementation or hand calculation
+- Use synthetic data where you know the correct answer</p>
+<p>If you suspect a bug:
+1. Isolate the suspicious section
+2. Add print statements or logging for intermediate values
+3. Test on a minimal example
+4. Ask a different model (or a colleague) to review</p>
+<h3 id="the-agent-fixed-something-that-wasnt-broken">The agent "fixed" something that wasn't broken<a class="headerlink" href="#the-agent-fixed-something-that-wasnt-broken" title="Permanent link">&para;</a></h3>
+<p>Classic symptoms:
+- A working feature stops working
+- Tests that passed now fail
+- Behavior changed in ways you didn't ask for</p>
+<p>Fix:
+1. <code>git diff</code> to see exactly what changed
+2. Revert the specific changes that broke things
+3. Be more specific in your next prompt: "Only change X, do not modify Y"</p>
+<h3 id="the-session-is-too-long-and-quality-has-dropped">The session is too long and quality has dropped<a class="headerlink" href="#the-session-is-too-long-and-quality-has-dropped" title="Permanent link">&para;</a></h3>
+<p>Signs:
+- Agent forgets earlier context
+- Repeated mistakes
+- Circular conversations</p>
+<p>Fix:
+1. Summarize what you accomplished so far
+2. Start a fresh session
+3. Paste only the essential context into the new session</p>
+<h2 id="preventing-problems-before-they-start">Preventing problems before they start<a class="headerlink" href="#preventing-problems-before-they-start" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Commit frequently</strong>: Small commits are easy to revert.</li>
+<li><strong>Review diffs immediately</strong>: Don't let changes pile up.</li>
+<li><strong>Keep tasks small</strong>: One clear goal per session.</li>
+<li><strong>Define "done" upfront</strong>: A test, a command, a specific output.</li>
+</ul>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../workflows/">Workflows (Plan-Do-Verify)</a></li>
+<li><a href="../verification/">Verification and Rigor</a></li>
+<li><a href="../git-basics/">Git Basics</a></li>
 </ul>
 
 
