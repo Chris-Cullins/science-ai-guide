@@ -8,7 +8,7 @@ There are many tools. Installing everything at once creates confusion.
    - Use it for planning, explanations, and writing.
 2. Add one agentic tool that can edit files and run commands.
    - Recommended: Claude Code.
-   - If you already pay for ChatGPT, consider OpenAI Codex CLI: https://github.com/openai/codex
+   - If you already pay for ChatGPT, consider [OpenAI Codex CLI](https://github.com/openai/codex)
 3. Only then add an IDE-based agent (optional).
    - Example: Cursor or Copilot in your IDE.
 4. Add multi-model workflows only after you have verification habits.

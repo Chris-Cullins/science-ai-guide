@@ -14,8 +14,8 @@ Built-in Terminal (fastest)
 
 Alternative terminals (optional)
 
-- Ghostty: https://ghostty.org/
-- iTerm2: https://iterm2.com/
+- [Ghostty](https://ghostty.org/)
+- [iTerm2](https://iterm2.com/)
 
 Any of these work. Pick one and stick with it.
 

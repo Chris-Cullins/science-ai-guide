@@ -10,7 +10,7 @@ From Anthropic's pricing page (Individual plans):
 - Pro: $17/month with annual discount ($200 billed up front) or $20 billed monthly; includes access to Claude Code
 - Max: from $100/month
 
-Source: https://www.anthropic.com/pricing
+Source: [Anthropic pricing](https://www.anthropic.com/pricing)
 
 ## Claude API pricing (if you build custom tools)
 
@@ -25,17 +25,17 @@ Tools pricing shown there also includes (examples):
 - Web search: $10 / 1K searches (not including tokens)
 - Code execution: $0.05 per hour per container (after free daily hours per org)
 
-Source: https://www.anthropic.com/pricing
+Source: [Anthropic pricing](https://www.anthropic.com/pricing)
 
 ## Alternatives (for comparison)
 
 - Cursor: Free tier; Pro $20/month; Pro+ $60/month; Ultra $200/month
-  Source: https://cursor.com/pricing
+  Source: [Cursor pricing](https://cursor.com/pricing)
 
 - GitHub Copilot (individual): Free; Pro $10/month; Pro+ $39/month
-  Source: https://github.com/features/copilot/plans
+  Source: [GitHub Copilot plans](https://github.com/features/copilot/plans)
 
-- ChatGPT plans are listed at: https://openai.com/pricing
+- ChatGPT plans are listed at [OpenAI pricing](https://openai.com/pricing)
 
 ## What people actually end up paying (examples)
 

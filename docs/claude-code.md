@@ -10,7 +10,7 @@ Notes:
 
 - If you are just getting started, Pro is often enough.
 - If you use it heavily (long sessions, large repos), you may need a higher tier.
-- Pricing changes; verify here: https://www.anthropic.com/pricing
+- Pricing changes; verify at [Anthropic's pricing page](https://www.anthropic.com/pricing)
 
 Alternative if you already pay for ChatGPT
 

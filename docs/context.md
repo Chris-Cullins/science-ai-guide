@@ -1,6 +1,6 @@
 # Why This Guide Exists
 
-This guide started from a YouTube video (https://www.youtube.com/watch?v=PctlBxRh0p4).
+This guide started from a [YouTube video](https://www.youtube.com/watch?v=PctlBxRh0p4).
 
 We intentionally do not store the full transcript in this public repo.
 
