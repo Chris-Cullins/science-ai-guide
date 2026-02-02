@@ -11,10 +11,11 @@ If you are new:
 1. [What This Is](overview.md)
 2. [Why Agentic AI](why-agentic.md)
 3. [Pick Your Tools](tooling.md)
-4. [Bootcamp (2 Days)](bootcamp.md)
-5. [Quick Win (First Hour)](first-hour.md)
-6. [Workflows (Plan-Do-Verify)](workflows.md)
-7. [Verification and Rigor](verification.md)
+4. [Oh I Get It (Guided Tour)](oh-i-get-it.md)
+5. [Bootcamp (2 Days)](bootcamp.md)
+6. [Quick Win (First Hour)](first-hour.md)
+7. [Workflows (Plan-Do-Verify)](workflows.md)
+8. [Verification and Rigor](verification.md)
 
 If you are leading a lab:
 

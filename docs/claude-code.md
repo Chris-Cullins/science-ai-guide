@@ -6,6 +6,12 @@ Claude Code is an agentic coding tool that runs in your terminal and can edit fi
 
 - A Claude subscription (Pro/Max/Team/Enterprise) or a Claude Console account
 
+Notes:
+
+- If you are just getting started, Pro is often enough.
+- If you use it heavily (long sessions, large repos), you may need a higher tier.
+- Pricing changes; verify here: https://www.anthropic.com/pricing
+
 Official docs:
 - [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
