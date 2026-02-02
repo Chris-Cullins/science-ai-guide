@@ -12,6 +12,7 @@ The goal is not to "learn AI". The goal is to build habits that produce correct,
    - See: [Burner Machine and Sandboxes](burner-machine.md)
 3. Pick one primary tool.
    - Recommended: Claude Code ([Claude Code](claude-code.md))
+   - If you already pay for ChatGPT, consider [OpenAI Codex CLI](https://github.com/openai/codex) as a Claude Code alternative.
 
 ## Day 1: Get a real win with guardrails
 

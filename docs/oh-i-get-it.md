@@ -25,6 +25,8 @@ If you do not recognize a command, ask it to explain before you approve it.
 
 See: [Claude Code](claude-code.md)
 
+If you already pay for ChatGPT, you can do a very similar experience with [OpenAI Codex CLI](https://github.com/openai/codex). This page uses Claude Code as the default path.
+
 ## Step 2: Start Claude Code
 
 Open a terminal: [Open a Terminal](open-terminal.md)

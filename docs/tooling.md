@@ -12,6 +12,8 @@ Why:
 
 Start here: [Claude Code](claude-code.md)
 
+If you already pay for a ChatGPT plan (Plus/Pro/Team/Edu/Enterprise), you can also use the terminal-based [OpenAI Codex CLI](https://github.com/openai/codex) without adding a separate Claude subscription. For many people, that is the cheapest way to get a "Claude Code-like" workflow.
+
 ## Alternatives (common)
 
 - [Cursor](https://cursor.com/): AI-first code editor with agent features

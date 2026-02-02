@@ -26,7 +26,8 @@ If you are leading a lab:
 
 ## Where to start
 
-1. Install and try Claude Code on a small, non-sensitive project: [Claude Code](claude-code.md)
+1. Install and try a terminal agent on a small, non-sensitive project: [Claude Code](claude-code.md)
+   - If you already pay for ChatGPT, you can use [OpenAI Codex CLI](https://github.com/openai/codex) instead.
 2. Learn the core workflow loop (plan -> do -> verify): [Workflows](workflows.md)
 3. Set guardrails for privacy, safety, and reproducibility: [Safety & Privacy](safety-privacy.md)
 4. Copy/paste prompt templates you can actually use: [Prompt Templates](prompts.md)

@@ -12,6 +12,10 @@ Notes:
 - If you use it heavily (long sessions, large repos), you may need a higher tier.
 - Pricing changes; verify here: https://www.anthropic.com/pricing
 
+Alternative if you already pay for ChatGPT
+
+- If you already have a ChatGPT plan (Plus/Pro/Team/Edu/Enterprise), consider [OpenAI Codex CLI](https://github.com/openai/codex) as a Claude Code alternative. It is also a terminal-based coding agent and can be used by signing in with your ChatGPT account.
+
 Official docs:
 - [Claude Code overview](https://docs.anthropic.com/en/docs/claude-code/overview)
 
