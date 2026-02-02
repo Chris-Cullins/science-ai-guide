@@ -4,6 +4,8 @@ This is a deliberately "aha"-style experience.
 
 You will use an agentic tool (Claude Code) to download this guide onto your computer, then have the agent walk you through it interactively.
 
+Note: if there is something in this guide you do not understand, ask your tool of choice to explain it. That is one of the best ways to learn fast.
+
 ## What you will do
 
 1. Install Claude Code
